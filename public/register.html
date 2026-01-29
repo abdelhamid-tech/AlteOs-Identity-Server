@@ -2,43 +2,42 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>AlteOs Identity – Créer un compte</title>
+    <title>S'inscrire – AlteOS</title>
+
+    <!-- Google Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../assets/styles.css">
 </head>
 
 <body>
 
-    <div class="auth-box">
-        <h1>Créer un compte</h1>
+    <div class="register-box">
+        <h1>S'inscrire</h1>
 
-        <div class="input-group">
-            <label>Nom d'utilisateur</label>
-            <input id="username" type="text" placeholder="Choisissez un username">
-        </div>
+        <label>Nom d'utilisateur</label>
+        <input id="username" type="text" placeholder="exemple_exemple">
 
-        <div class="input-group">
-            <label>Mot de passe</label>
-            <input id="password" type="password" placeholder="Créer un mot de passe">
-        </div>
+        <label>Mot de passe</label>
+        <input id="password" type="password" placeholder="Votre mot de passe">
 
-        <div class="input-group">
-            <label>Confirmer le mot de passe</label>
-            <input id="confirm" type="password" placeholder="Répéter le mot de passe">
-        </div>
+        <label>Confirmation du mot de passe</label>
+        <input id="confirm" type="password" placeholder="Répétez le mot de passe">
 
-        <div class="checkbox-group">
-            <input id="terms" type="checkbox">
-            <label for="terms">
-                J’accepte les <a href="#">Conditions d’utilisation</a> et la <a href="#">Politique de confidentialité</a>.
-            </label>
-        </div>
-
-        <button onclick="registerAccount()" class="auth-btn">Créer mon compte</button>
-
-        <p class="link">
-            Déjà un compte ?
-            <a href="https://ton-github.github.io/AlteOs-7/login.html">Retourner à AlteOs 7</a>
+        <p class="conditions">
+            En vous inscrivant, vous acceptez les<br>
+            <a href="#">Conditions d'utilisation</a>, la <a href="#">Politique de confidentialité</a><br>
+            de AlteOS.
         </p>
+
+        <div class="checkbox">
+            <input id="terms" type="checkbox">
+            <label for="terms">J’accepte les conditions</label>
+        </div>
+
+        <button class="next-btn" onclick="registerAccount()">Suivant</button>
+
+        <p class="note">Utilisez le navigateur privé si ce n'est pas votre ordinateur</p>
     </div>
 
     <script src="../src/storage.js"></script>
